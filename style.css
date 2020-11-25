@@ -101,13 +101,13 @@
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 100vw 100vh ;
-    /*background-image: url("image/pseudocolor.gif");*/
+    background-image: url("image/pseudocolor.gif");
     flex-direction: column;
 
 }
 
 .PluitMeme{
-    height: 2000px;
+
 }
 .clignoter
 {
@@ -117,22 +117,12 @@
 {
     animation: loupiotte 0.4s infinite;
 }
-#meme1{
-    background-image: url("video/meme1.gif") no-repeat;
-    width: 25%
+.divmeme
+{
+    width: 25%;
+    height: 100%;
 }
-#meme2{
-    background-image: url("video/meme2.gif") no-repeat;
-    width: 25%
-}
-#meme3{
-    background-image: url("video/meme3.gif") no-repeat;
-    width: 25%
-}
-#meme4{
-    background-image: url("video/meme4.gif") no-repeat;
-    width: 25%
-}
+
 
 @keyframes clignoter {
     0%   { opacity:1; }
