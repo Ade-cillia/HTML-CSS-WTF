@@ -49,9 +49,12 @@
     width:400px;
     height:400px;
     border: none;
+    transition: all 1s ease;
 }
 .buttonMac:hover{
     background:url("image/petitlogohover.png") no-repeat;
+    transform:scale(4);
+    animation: loupiotte 0.4s infinite;
 }
 .buttonMac:focus{
     outline: none;
@@ -66,9 +69,12 @@
     width:400px;
     height:400px;
     border: none;
+    transition: all 1s ease;
 }
 .buttonWindows:hover{
     background:url("image/logowindowshover.png") no-repeat;
+    transform:scale(4);
+    animation: loupiotte 0.4s infinite;
 }
 .buttonWindows:focus{
     outline: none;
@@ -95,7 +101,7 @@
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 100vw 100vh ;
-    background-image: url("image/pseudocolor.gif");
+    /*background-image: url("image/pseudocolor.gif");*/
     flex-direction: column;
 
 }
@@ -105,7 +111,7 @@
 }
 .clignoter
 {
-    animation: clignoter 2s infinite;
+    animation: clignoter 0.4s infinite;
 }
 .loupiotte
 {
@@ -127,7 +133,7 @@
     background-image: url("video/meme4.gif") no-repeat;
     width: 25%
 }
-}
+
 @keyframes clignoter {
     0%   { opacity:1; }
     40%   {opacity:0; }
