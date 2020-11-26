@@ -120,8 +120,25 @@
 .divmeme
 {
     width: 25%;
-    height: 100%;
+    justify-content: flex-end;
 }
+
+.fall
+{
+    animation: fall 0.2s infinite;
+}
+.fall2
+{
+    animation: fall 0.5s infinite;
+}
+.divcentralmeme
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+
 
 
 @keyframes clignoter {
@@ -145,13 +162,12 @@
 
 }
 
-@kayframes fall{
-    0%{
-        transform: translateY(-1000px);
-    }
+@keyframes fall{
+    0% {transform: translateY(-1000px);}
+    50% {transform: translateY(1000px);}
 }
 
-@keyframes wind {
+@keyframes wind{
     to{
         transform: translateX(50px);
     }
