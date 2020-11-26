@@ -129,7 +129,11 @@
 }
 .fall2
 {
-    animation: fall 0.5s infinite;
+    animation: fall 0.3s infinite;
+}
+.fall3
+{
+    animation: fall 0.6s infinite;
 }
 .divcentralmeme
 {
@@ -138,7 +142,10 @@
 }
 
 
-
+.wind1
+{
+    animation: wind 2s infinite;
+}
 
 
 @keyframes clignoter {
@@ -168,7 +175,8 @@
 }
 
 @keyframes wind{
-    to{
-        transform: translateX(50px);
+    0%{
+        transform: translateX(-10000px);
     }
+
 }
