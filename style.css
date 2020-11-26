@@ -123,11 +123,44 @@
 }
 
 /*  Page 7  */
-.imagechat
+.monChat1{
+    background-image: url('image/monChat1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.monChat2{
+    background-image: url('image/monChat2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.monChat3{
+    background-image: url('image/monChat3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.monChat4{
+    background-image: url('image/monChat4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tresGrandCube{
+    width: 100%;
+    height: 90%;
+}
+
+.grandCube7
 {
-    display: flex;
-    height: 50%;
-    width: 50%;
+    width: 100%;
+    height: 100%;
+}
+.titrechat
+{
+    width: 100%;
+    height: 10%;
+    font-size: 50px;
+    justify-content: center;
 }
 
 
@@ -160,12 +193,11 @@
     background-image: url('video/tenor.gif');
     background-repeat: no-repeat;
 }
+.seven{
+    background-image: url('video/titreChat.gif');
+    background-repeat: no-repeat;
 
-
-
-
-
-
+}
 
 
 .clignoter{
