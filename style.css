@@ -3,19 +3,13 @@
     padding: 0;
 }
 
-.slide{
-    width: 100vw;
-    height: 100vh;
-    background-image: url('image/fond.gif');
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh ;
 
-}
+/*  ADD A PAGE  */
 .wrapper{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 500vw; /* +100 pour chaque nouvelle page */
+    width: 700vw; /* +100 pour chaque nouvelle page */
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
 }
@@ -31,10 +25,18 @@
 ::-webkit-scrollbar{
     display: none;
 }
-
 .flex{
     display: flex;
 }
+.slide{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('image/fond.gif');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh ;
+
+}
+
 
 /* PAGE 2 */
 .buttonMac{
@@ -76,50 +78,51 @@
 }
 
 /* Page 3 */
-
-.divmeme
-{
+.divmeme{
     width: 25%;
     justify-content: flex-end;
 }
-
-.divcentralmeme
-{
+.divcentralmeme{
     height: 100%;
     width: 100%;
 }
 
 /* Page 5 */
-.grandCube
-{
+.grandCube{
     width: 50%
 }
-.petitCube
-{
+.petitCube{
+
     height: 50%;
     flex-wrap: nowrap;
-    background-image: url('video/illuminati.gif');
-    background-repeat: no-repeat;
+
 }
-.petitCube2
-{
-    height: 50%;
-    flex-wrap: nowrap;
-    background-image: url('video/illuminati2.gif');
-    background-repeat: no-repeat;
-}
-.texteP5t1
-{
+.texteP5t1{
     justify-content: center;
     font-size: 50px;
 }
-.texteP5t1:hover
-{
+.texteP5t1:hover{
     transform: scale(4);
     cursor: pointer;
 }
+.illuminati1{
+    background-image: url('video/illuminati.gif');
+    background-repeat: no-repeat;
+}
+.illuminati2{
+    background-image: url('video/illuminati2.gif');
+    background-repeat: no-repeat;
+}
 
+/* Page 6 */
+.donate{
+    display: flex;
+    height: 50%;
+    width: 50%;
+    cursor: pointer;
+}
 
+/*  Page 7  */
 
 
 
@@ -139,76 +142,68 @@
 
 }
 .three{
-    width: 100vw;
-    height: 100vh;
     background-image: url("image/pseudocolor.gif");
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh ;
     flex-direction: column;
 
 }
-.four{
-    width: 100vw;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh ;
-}
-.five
-{
+
+.five{
     background-image: url('video/giphy.gif');
     background-repeat: no-repeat;
-    background-size: 100vw 100vh ;
 
+}
+.six{
+    background-image: url('video/tenor.gif');
+    background-repeat: no-repeat;
 }
 
 
 
-.clignoter
-{
+
+
+
+
+
+.clignoter{
     animation: clignoter 0.4s infinite;
 }
-.loupiotte
-{
+.loupiotte{
     animation: loupiotte 0.4s infinite;
 }
-
-.loupiotteColor
-{
+.loupiotteColor{
     animation: loupiotteColor 0.4s infinite;
 }
-
-.fall
-{
+.fall{
     animation: fall 0.2s infinite;
 }
-.fall2
-{
+.fall2{
     animation: fall 0.3s infinite;
 }
-.fall3
-{
+.fall3{
     animation: fall 0.6s infinite;
 }
-.wind1
-{
+.wind1{
     animation: wind 2s infinite linear;
 }
-.spin
-{
+.spin{
     animation: spin 0.5s infinite linear;
 }
-.spin2
-{
+.spin2{
     animation: spin 1s infinite linear;
 }
-.spinXY
-{
+.spinXY{
     animation: spinXY 5s infinite linear;
 }
-.spinDuble
-{
+.spinXY2{
+    animation: spinXY 5s infinite linear;
+}
+.spinDuble{
     animation: spinDuble 1.5s infinite linear;
 }
+.animationPaypal{
+    animation: paypal 5s infinite linear;
+}
+
 @keyframes clignoter {
     0%   { opacity:1; }
     40%   {opacity:0; }
@@ -264,6 +259,18 @@
     60% {transform: translatex(500px);}
     80% {transform: translateY(-500px);}
     100% {transform: translateX(-500px);}
+}
+
+@keyframes paypal {
+    0% {transform: translateX(500px);}
+    14% {transform: translateY(500px);}
+    28% {transform: translateX(-500px);}
+    42% {transform: translateY(-500px);}
+    56% {transform: translateX(-500px);}
+    70% {transform: translateY(-500px);}
+    84% {transform: translateX(500px);}
+    90% {transform: translateY(500px);}
+    100% {transform: translateX(500px);}
 }
 
 @keyframes spinDuble {
