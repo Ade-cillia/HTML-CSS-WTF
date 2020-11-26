@@ -15,21 +15,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 500vw;
+    width: 500vw; /* +100 pour chaque nouvelle page */
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
 }
-
-.clignoter{
-    animation-duration: .8s;
-    animation-name: clignoter;
-    animation-iteration-count: infinite;
-    transition: none;
-}
-.flex{
-    display: flex;
-}
-
 .outer-wrapper {
     width: 100vh;
     height: 100vw;
@@ -43,6 +32,11 @@
     display: none;
 }
 
+.flex{
+    display: flex;
+}
+
+/* PAGE 2 */
 .buttonMac{
     background:url("image/petitlogo.png") no-repeat;
     cursor:pointer;
@@ -81,11 +75,59 @@
 
 }
 
+/* Page 3 */
+
+.divmeme
+{
+    width: 25%;
+    justify-content: flex-end;
+}
+
+.divcentralmeme
+{
+    height: 100%;
+    width: 100%;
+}
+
+/* Page 5 */
+.grandCube
+{
+    width: 50%
+}
+.petitCube
+{
+    height: 50%;
+    flex-wrap: nowrap;
+    background-image: url('video/illuminati.gif');
+    background-repeat: no-repeat;
+}
+.petitCube2
+{
+    height: 50%;
+    flex-wrap: nowrap;
+    background-image: url('video/illuminati2.gif');
+    background-repeat: no-repeat;
+}
+.texteP5t1
+{
+    justify-content: center;
+    font-size: 50px;
+}
+.texteP5t1:hover
+{
+    transform: scale(4);
+    cursor: pointer;
+}
+
+
+
+
+
+
 .one{
     font-size: 250px;
     text-decoration: underline wavy red;
 }
-
 .two{
     display: flex;
     justify-content: center;
@@ -105,26 +147,19 @@
     flex-direction: column;
 
 }
-
 .four{
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 100vw 100vh ;
 }
-
 .five
 {
-    width: 100vh;
-    height: 100vw;
-    background-image: url('image/fond.gif');
+    background-image: url('video/giphy.gif');
     background-repeat: no-repeat;
     background-size: 100vw 100vh ;
 
 }
-
-
-
 
 
 
@@ -136,20 +171,11 @@
 {
     animation: loupiotte 0.4s infinite;
 }
-.divmeme
+
+.loupiotteColor
 {
-    width: 25%;
-    justify-content: flex-end;
+    animation: loupiotteColor 0.4s infinite;
 }
-
-.divcentralmeme
-{
-    height: 100%;
-    width: 100%;
-}
-
-
-
 
 .fall
 {
@@ -163,22 +189,22 @@
 {
     animation: fall 0.6s infinite;
 }
-
-
 .wind1
 {
     animation: wind 2s infinite linear;
 }
 .spin
 {
-    animation: spin 5s infinite linear;
+    animation: spin 0.5s infinite linear;
 }
-
+.spin2
+{
+    animation: spin 1s infinite linear;
+}
 .spinXY
 {
     animation: spinXY 5s infinite linear;
 }
-
 .spinDuble
 {
     animation: spinDuble 1.5s infinite linear;
@@ -201,7 +227,21 @@
     80%  {background-color: DeepPink; }
     90%  {background-color: brown; }
     100%  {background-color: yellow; }
+}
 
+@keyframes loupiotteColor {
+
+    0%   {color: red; }
+    10%  {color: orange; }
+    20%  {color: yellow; }
+    30%  {color: green; }
+    40%  {color: cyan; }
+    50%  {color: blue; }
+    60%  {color: purple; }
+    70%  {color: pink; }
+    80%  {color: DeepPink; }
+    90%  {color: brown; }
+    100%  {color: yellow; }
 }
 
 @keyframes fall{
