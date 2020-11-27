@@ -5,14 +5,6 @@
 
 
 /*  ADD A PAGE  */
-.wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 700vw; /* +100 pour chaque nouvelle page */
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-}
 .outer-wrapper {
     width: 100vh;
     height: 100vw;
@@ -21,6 +13,14 @@
     overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 800vw; /* +100 pour chaque nouvelle page */
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -161,11 +161,35 @@
     justify-content: center;
 }
 
+/* Page 8 */
+.petitCubeTransformer{
+    height: 50%;
+    width: 50%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.covid1{
+    height: 100%;
+    width: 100%;
+    background-image: url('video/chatmasque.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.covid2{
+
+}
+.covid3{
+
+}
+.covid4{
+
+}
+
 /* Page seteup */
 .one{
     font-size: 250px;
     text-decoration: underline wavy red;
-    min-width: 100vw;
 }
 .two{
     display: flex;
@@ -175,34 +199,34 @@
     flex-direction: center;
     color: red;
     margin-bottom: 20px;
-    min-width: 100vw;
 
 }
 .three{
     background-image: url("image/pseudocolor.gif");
     flex-direction: column;
-    min-width: 100vw;
 
 }
 .four{
-    min-width: 100vw;
+    background-image: url('video/fondYeux.gif');
+    background-repeat: no-repeat;
 }
 .five{
     background-image: url('video/giphy.gif');
     background-repeat: no-repeat;
-    min-width: 100vw;
 
 }
 .six{
     background-image: url('video/tenor.gif');
     background-repeat: no-repeat;
-    min-width: 100vw;
 }
 .seven{
     background-image: url('video/titreChat.gif');
     background-repeat: no-repeat;
 }
-
+.eight{
+    background-image: url('video/masque.gif');
+    background-repeat: no-repeat;
+}
 
 /*  Appelle D'animation */
 .clignoter{
