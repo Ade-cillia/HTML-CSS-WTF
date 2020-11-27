@@ -35,8 +35,9 @@
     background-repeat: no-repeat;
     background-size: 100vw 100vh ;
 }
-
-
+.center{
+    justify-content: center;
+}
 /* PAGE 2 */
 .buttonMac{
     background:url("image/petitlogo.png") no-repeat;
@@ -145,29 +146,26 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .tresGrandCube{
     width: 100%;
     height: 90%;
 }
-
-.grandCube7
-{
+.grandCube7{
     width: 100%;
     height: 100%;
 }
-.titrechat
-{
+.titrechat{
     width: 100%;
     height: 10%;
     font-size: 50px;
     justify-content: center;
 }
 
-
+/* Page seteup */
 .one{
     font-size: 250px;
     text-decoration: underline wavy red;
+    min-width: 100vw;
 }
 .two{
     display: flex;
@@ -177,29 +175,36 @@
     flex-direction: center;
     color: red;
     margin-bottom: 20px;
+    min-width: 100vw;
 
 }
 .three{
     background-image: url("image/pseudocolor.gif");
     flex-direction: column;
+    min-width: 100vw;
 
+}
+.four{
+    min-width: 100vw;
 }
 .five{
     background-image: url('video/giphy.gif');
     background-repeat: no-repeat;
+    min-width: 100vw;
 
 }
 .six{
     background-image: url('video/tenor.gif');
     background-repeat: no-repeat;
+    min-width: 100vw;
 }
 .seven{
     background-image: url('video/titreChat.gif');
     background-repeat: no-repeat;
-
 }
 
 
+/*  Appelle D'animation */
 .clignoter{
     animation: clignoter 0.4s infinite;
 }
@@ -242,6 +247,8 @@
 .borderChat{
     animation: borderChat 0.3s infinite linear;
 }
+
+/* Animation  */
 @keyframes clignoter {
     0%   { opacity:1; }
     40%   {opacity:0; }
@@ -321,7 +328,6 @@
     90% { transform: rotate(360deg);}
     100% {transform: translatex(-500px);}
 }
-
 
 @keyframes borderChat {
     0% { border: 0px ridge red;}
