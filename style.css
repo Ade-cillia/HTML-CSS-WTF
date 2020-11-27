@@ -34,7 +34,6 @@
     background-image: url('image/fond.gif');
     background-repeat: no-repeat;
     background-size: 100vw 100vh ;
-
 }
 
 
@@ -66,6 +65,8 @@
     height:400px;
     border: none;
     transition: all 1s ease;
+    position: relative;
+    top: -50px;
 }
 .buttonWindows:hover{
     background:url("image/logowindowshover.png") no-repeat;
@@ -183,7 +184,6 @@
     flex-direction: column;
 
 }
-
 .five{
     background-image: url('video/giphy.gif');
     background-repeat: no-repeat;
@@ -239,7 +239,9 @@
 .animationPaypal{
     animation: paypal 5s infinite linear;
 }
-
+.borderChat{
+    animation: borderChat 0.3s infinite linear;
+}
 @keyframes clignoter {
     0%   { opacity:1; }
     40%   {opacity:0; }
@@ -318,4 +320,19 @@
     70%{ transform: rotate(0deg);}
     90% { transform: rotate(360deg);}
     100% {transform: translatex(-500px);}
+}
+
+
+@keyframes borderChat {
+    0% { border: 0px ridge red;}
+    10% { border: 2px ridge blue;}
+    30% { border: 4px ridge purple;}
+    40% { border: 6px ridge green;}
+    50% { border: 8px ridge yellow;}
+    60% { border: 10px ridge black;}
+    70% { border: 8px ridge white;}
+    80% { border: 6px ridge DeepPink;}
+    90% { border: 4px ridge pink;}
+    95% { border: 2px ridge cyan;}
+    100% { border: 0px ridge brown;}
 }
