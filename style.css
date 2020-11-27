@@ -37,6 +37,7 @@
 }
 .center{
     justify-content: center;
+    align-items: center;
 }
 /* PAGE 2 */
 .buttonMac{
@@ -172,19 +173,36 @@
 .covid1{
     height: 100%;
     width: 100%;
-    background-image: url('video/chatmasque.gif');
+    background-image: url('video/chatmasque2.gif');
     background-repeat: no-repeat;
     background-size: cover;
 }
-.covid2{
-
-}
 .covid3{
-
+    height: 100%;
+    width: 50%;
+    background-image: url('video/covid.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .covid4{
+    height: 100%;
+    width: 100%;
+    background-image: url('video/attention.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
+
+/* EasterEgg */
+.easterEgg{
+    background-image: url('image/easterEgg.jpg');
+    background-repeat: no-repeat;
+}
+
+
+
+
+
 
 /* Page seteup */
 .one{
@@ -248,7 +266,7 @@
     animation: fall 0.6s infinite;
 }
 .wind1{
-    animation: wind 2s infinite linear;
+    animation: wind 5s infinite linear;
 }
 .spin{
     animation: spin 0.5s infinite linear;
@@ -271,7 +289,15 @@
 .borderChat{
     animation: borderChat 0.3s infinite linear;
 }
-
+.smallBig{
+    animation: smallBig 0.3s infinite linear;
+}
+.smallBig2{
+    animation: smallBig 1s infinite linear;
+}
+.smallBig3{
+    animation: smallBig 2s infinite linear;
+}
 /* Animation  */
 @keyframes clignoter {
     0%   { opacity:1; }
@@ -314,7 +340,7 @@
 }
 
 @keyframes wind{
-    0% {transform: translateX(-10000px);}
+    0% {transform: translateX(-15000px);}
 }
 
 @keyframes spin {
@@ -365,4 +391,8 @@
     90% { border: 4px ridge pink;}
     95% { border: 2px ridge cyan;}
     100% { border: 0px ridge brown;}
+}
+@keyframes smallBig {
+    0% { transform: scale(0);}
+    100% { transform: scale(3);}
 }
